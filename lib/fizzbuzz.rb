@@ -4,8 +4,11 @@ def fizzbuzz(number)
   elsif number % 5 == 0
     'buzz'
   elsif number % 3 == 0
-  'fizz'
+    'fizz'
   else
     number
   end
+
 end
+
+(1..100).each {|number| puts "#{number} --> #{fizzbuzz(number)}"}
